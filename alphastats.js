@@ -1,5 +1,5 @@
 function consoleTest(letter="sigma") {
-  if (letter=="sigma" || letter!="alpha") {
+  if (letter=="sigma" || letter!=="alpha") {
     console.error("You are not sigma enough to obtain the true content of this error message, so this temporary error message was placed. To become more sigma, you must improve your physique by enhancing your jawline until it reaches a status of chiseled, and then try again.");
   } else {
     return("A true sigma right there buddy, this function will not return this message to the console, this message is being returned as a string.");
