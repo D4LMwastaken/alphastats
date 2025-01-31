@@ -5,7 +5,7 @@
   "description": "Alphastats, alphastatistics, or astats (for short) is a library aimed at simple and complex data analysis, between multiple lists. It has some functions of the TI-84+ CE Calculator, and it is useful for basic and complex data analysis needed in JS/TS.",
   "main": "alphastats.js",
   "scripts": {
-    "test": "node testing-alphastats.js"
+    "Test": "node testing-alphastats.js"
   },
   "keywords": ["Statistics", "JavaScript", "AlphaStats","Alphastats","Alphastatistics","astats"],
   "author": "S-Orbital",
