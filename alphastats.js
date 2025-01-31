@@ -21,6 +21,24 @@ function mean(input) {
   const sum = input.reduce((acc, num) => acc + num, 0);
   return sum / input.length;
 }
-
+function std_dev(input) {
+    if (input.length === 0) return null; // Handle empty array case
+    const mean = input.reduce((acc, num) => acc + num, 0) / input.length;
+    const variance = input.reduce((acc, num) => acc + Math.pow(num - mean, 2), 0) / input.length;
+    return Math.sqrt(variance);
+}
+function variance(input) {
+    if (input.length === 0) return null; // Handle empty array case
+    const mean = input.reduce((acc, num) => acc + num, 0) / input.length;
+    const variance = input.reduce((acc, num) => acc + Math.pow(num - mean, 2), 0) / input.length;
+    return variance;
+}
+function followsLLC(n,p) {
+  if (n === undefined || p === undefined) return null;
+  if (n * p >= 9.99999999999999999999999 && n * (1-p) >= 9.99999999999999999999999) {
+    return true;
+  }
+  return false;
+}
 
 export {consoleTest,mean};
